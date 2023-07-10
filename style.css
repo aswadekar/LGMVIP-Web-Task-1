@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;  
+    width: 100%;  
+    overflow: hidden;
+    
+}
+.imagesec{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('todo2.jpg') no-repeat fixed center;
+    background-size: 100% 100%;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    width: 40%;
+    min-width: 450px;
+    min-height: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.bg h2{
+    padding: 0px 0px;
+    margin-top: 12px;
+    padding-bottom: 35px;
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.bg {
+    padding: 20px 30px;
+}
+.bg input{
+    width: 87%;
+    height: 35px;
+    border: 2px solid #bbbbbb;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.bg input:focus{
+    outline: none;
+    border-color: #008080;
+}
+.bg button{
+    width: 10%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: #008080;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+#plus:hover{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+#tasks{
+    background-color: #ffffff;
+    padding: 16px 20px;
+    margin-top: -16px;
+    margin-left: 9px;
+    border-radius: 10px;
+    width: 95.4%;
+    position: relative;
+}
+.task{
+    background-color: #c5e1e6;
+    height: 50px;
+	margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+	border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #008080;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+#dustbin:hover{
+    color: red;
+}
+
+.completed{
+    text-decoration: line-through;
+}
